@@ -10,7 +10,7 @@ public class UserApp {
         employees[4] = new Employee("Колесник", "Иван", "Александрович", 30, "koolix0092@yandex.ru", 70000.0, "Менеджер");
         for (int i = 0; i < 5; i++) {
             if (employees[i].getAge() > 40) {
-                employees[i].writeInfo();
+                employees[i].writeInfo(); //
             }
         }
     }
