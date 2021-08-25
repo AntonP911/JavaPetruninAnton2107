@@ -11,10 +11,12 @@ public class HomeWork5App {
         bobikDog.swim(100);
 
         catClass catBarsik = new catClass("Orange","Barsik", 1,15, false,true);
-        catBarsik.run(100);
+        catBarsik.run(300);
         catBarsik.swim(15);
+        catBarsik.run(100);
 
         System.out.println("Количество кошек " + catClass.getCount());
         System.out.println("Количество собак " + dogClass.getCount());
+
     }
 }
