@@ -1,6 +1,6 @@
 package Lesson5;
 
-public class catClass extends AnimalClass {
+public class catClass extends animalClass {
     public static int count;
     public static final double MAX_RUN_DISTANCE = 200;
     private Boolean skin; //Лысый кот?
@@ -43,8 +43,8 @@ public class catClass extends AnimalClass {
 
     @Override
     public void run(int distance) {
-        if (distance > 500) {
-            System.out.println(super.getName() + " пробежал " + MAX_RUN_DISTANCE + " метров, а потом устал и лег отдыхать, остальные " + (MAX_RUN_DISTANCE - distance) + " он пробежал после хорошего отдыха!");
+        if (distance > MAX_RUN_DISTANCE) {
+            System.out.println(super.getName() + " пробежал " + MAX_RUN_DISTANCE + " метров, а потом устал и лег отдыхать, остальные " + (distance - MAX_RUN_DISTANCE) + " он пробежал после хорошего отдыха!");
         } else {
             System.out.println(super.getName() + " пробежал " + distance + " метров.");
         }

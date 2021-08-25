@@ -1,6 +1,6 @@
 package Lesson5;
 
-public class dogClass extends AnimalClass {
+public class dogClass extends animalClass {
     public static int count;
     public static final double MAX_RUN_DISTANCE = 500;
     public static final double MAX_SWIM_DISTANCE = 10;
@@ -44,7 +44,7 @@ public class dogClass extends AnimalClass {
 
     @Override
     public void run(int distance) {
-        if (distance > 500) {
+        if (distance > MAX_RUN_DISTANCE) {
             System.out.println(super.getName() + " пробежал " + MAX_RUN_DISTANCE + " метров, а потом устал и остальные " + (distance - MAX_RUN_DISTANCE) + " бежать не стал. Хозяин по ворчал немного...");
         } else {
             System.out.println(super.getName() + " пробежал " + distance + " метров.");

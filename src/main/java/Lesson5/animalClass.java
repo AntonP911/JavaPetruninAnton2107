@@ -1,6 +1,7 @@
 package Lesson5;
 
-public abstract class AnimalClass {
+public abstract class animalClass {
+    private static int animalCount = 0;
     private double weight;
     private double height;
     private String color;
@@ -14,22 +15,23 @@ public abstract class AnimalClass {
         this.name = name;
     }
 
-    AnimalClass (String color, String name, double weight, double height) {
+    animalClass (String color, String name, double weight, double height) {
+        animalCount++;
         this.weight = weight;
         this.height = height;
         this.color = color;
         this.name = name;
     }
 
-    AnimalClass (String color, double weight, double height) {
+    animalClass (String color, double weight, double height) {
         this(color, "Unknown",weight,height);
     }
 
-    AnimalClass (String color) {
+    animalClass (String color) {
         this(color, "Unknown",0,0);
     }
 
-    AnimalClass () {
+    animalClass () {
         this("Unknown", "Unknown",0,0);
     }
 
